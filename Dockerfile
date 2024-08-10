@@ -14,3 +14,7 @@ RUN \. $NVM_DIR/nvm.sh && \
 ENV PATH $PATH:/root/.local/bin
 
 RUN curl -sSL https://get.wasp-lang.dev/installer.sh | bash
+
+WORKDIR /app
+
+CMD ["/usr/bin/bash"]
